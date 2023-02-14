@@ -14,15 +14,15 @@ inicio
       Se (idade >= 18) entao
          apto <- Verdadeiro
       senao
-           apto <- Falso
+         apto <- Falso
       Fimse
       EscrevaL
-         EscrevaL("-------- STATUS ----------")
+         EscrevaL ("-------- STATUS ----------")
          EscrevaL (" IDADE: ", idade, " ANOS")
-      Se (idade >= 18) entao
-         EscrevaL(" APTO A TIRAR A CARTEIRA")
+      Se (apto) entao
+         EscrevaL (" APTO A TIRAR A CARTEIRA")
       senao
-         EscrevaL(" INAPTO A TIRAR A CARTEIRA")
+         EscrevaL (" INAPTO A TIRAR A CARTEIRA")
       Fimse
-      Escreva("---------------------------")
+      Escreva ("---------------------------")
 fimalgoritmo
