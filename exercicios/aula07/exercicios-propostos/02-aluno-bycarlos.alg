@@ -1,4 +1,4 @@
-algoritmo "MediadoSemetre"
+algoritmo "MediadoSemestre"
 var
    N1, N2, M: Real
    apr: Logico
