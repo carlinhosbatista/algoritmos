@@ -12,16 +12,11 @@ inicio
       Leia(N2)
       EscrevaL ("-------------------------")
       M <- (N1 + N2) / 2
-      Se (M >= 7) entao
-           apr <- verdadeiro
-      senao
-           apr <- falso
-      Fimse
       EscrevaL (" Media: ", M:3:1)
-      Se (apr) entao
-           EscrevaL (" ALUNO APROVADO")
+      Se (M >= 7) entao
+          EscrevaL (" ALUNO APROVADO")
       senao
-           EscrevaL (" ALUNO REPROVADO")
+          EscrevaL (" ALUNO REPROVADO")
       Fimse
       Escreva ("-------------------------")
 fimalgoritmo
