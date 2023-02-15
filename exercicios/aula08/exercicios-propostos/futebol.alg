@@ -1,27 +1,31 @@
-algoritmo "semnome"
+algoritmo "Futebol"
 var
-   G1, G2, Dif: Inteiro
+   Gols1, Gols2, Dif: Real
 inicio
+      EscrevaL ("-------------------------")
       EscrevaL ("    BANGU X MADUREIRA    ")
       EscrevaL ("-------------------------")
       Escreva ("Quantos gols do BANGU? ")
-      Leia (G1)
+      Leia (Gols1)
       Escreva ("Quantos gols do MADUREIRA? ")
-      Leia (G2)
-      Se (G1 > G2) entao
-         Dif <- G1 - G2
+      Leia (Gols2)
+      Se (Gols1 > Gols2) entao
+         Dif <- Gols1 - Gols2
       senao
-           Dif <- G2 - G1
+           Dif <- Gols2 - Gols1
       FimSe
       EscrevaL ("-------------------------")
-      Escreval ("DIFERENCA", Dif)
+              EscrevaL ("DIFERENCA:", Dif)
       Escolha Dif
               Caso 0
                    EscrevaL ("STATUS: EMPATE")
               Caso 1, 2, 3
-                   EscrevaL ("STATUS: PARTIDA NORMAL")
+                   EscrevaL  ("STATUS: PARTIDA NORMAL")
               Caso 4, 5, 6, 7
-                   EscrevaL ("STATUS: GOLEADA")
+                   EscrevaL (" STATUS: GOLEADA")
+              OutroCaso
+                   EscrevaL(" STATUS: ALGO INCOMUM. ")
+                   EscrevaL(" Voce digitou os dados corretos? ")
       FimEscolha
-      EscrevaL ("-------------------------")
+      Escreva ("-------------------------")
 fimalgoritmo
