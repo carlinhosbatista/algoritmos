@@ -17,10 +17,11 @@ inicio
       Escreval ("DIFERENCA", Dif)
       Escolha Dif
               Caso 0
-                   Dif
+                   EscrevaL ("STATUS: EMPATE")
+              Caso 1, 2, 3
+                   EscrevaL ("STATUS: PARTIDA NORMAL")
+              Caso 4, 5, 6, 7
+                   EscrevaL ("STATUS: GOLEADA")
       FimEscolha
-      EscrevaL ("STATUS: EMPATE")
-      EscrevaL ("STATUS: PARTIDA NORMAL")
-      EscrevaL ("STATUS: GOLEADA")'
       EscrevaL ("-------------------------")
 fimalgoritmo
