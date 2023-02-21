@@ -11,7 +11,7 @@ inicio
            Tot010 <- Tot010 + 1
            Se (v % 2 = 1) entao
            SImp <- SImp + v
-        FimSe
+        FimSe//Dentro do Se, soma entre 0-10, se posto fora, soma todos os v
         FimSe
    FimPara
    EscrevaL ("Ao todo foram", Tot010, " valores entre 0 e 10")
