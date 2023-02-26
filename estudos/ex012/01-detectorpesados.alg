@@ -3,12 +3,15 @@ var
    I: Inteiro
    N, Pesado: Caractere
    P, Mai: Real
+Procedimento Topo ()
 inicio
    LimpaTela
    EscrevaL ("-----------------------------------")
    EscrevaL (" D E T E C T O R   DE  P E S A D O ")
    EscrevaL (" Maior Peso ate agora: ", Mai, "kg")
    EscrevaL ("-----------------------------------")
+inicio
+   Topo ()
    Para I <- 1 ate 5 faca
       Escreva ("Digite o nome: ")
       Leia (N)
@@ -18,16 +21,8 @@ inicio
       Mai <- P
       Pesado <- N
       FimSe
-      LimpaTela
-   EscrevaL ("-----------------------------------")
-   EscrevaL (" D E T E C T O R   DE  P E S A D O ")
-   EscrevaL (" Maior Peso ate agora: ", Mai, "kg")
-   EscrevaL ("-----------------------------------")
+      Topo ()
    FimPara
-   LimpaTela
-   EscrevaL ("-----------------------------------")
-   EscrevaL (" D E T E C T O R   DE  P E S A D O ")
-   EscrevaL (" Maior Peso ate agora: ", Mai, "kg")
-   EscrevaL ("-----------------------------------")
+   Topo ()
    EscrevaL ("A pessoa mais pesada foi ", Pesado, ", com", Mai, " quilos.")
 fimalgoritmo
