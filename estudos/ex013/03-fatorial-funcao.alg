@@ -14,5 +14,5 @@ inicio
    Escreva ("Digite um numero: ")
    Leia (N)
    F <- Fatorial (N)
-   Escreva ("O valor de", N, "! e igaul a", F)
+   Escreva ("O valor de", N, "! e igual a", F)
 fimalgoritmo
