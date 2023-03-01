@@ -16,8 +16,7 @@ inicio
              FimSe
         FimPara
    FimPara
-   
    Para i <- 1 ate 4 faca
-        Escreva("[", v[[i], "]")
+        Escreva("{", vet[i], "}")
    FimPara
 fimalgoritmo
