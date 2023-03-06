@@ -3,7 +3,7 @@ var
    gab: vetor[1..5] de Caractere
    prova: vetor[1..5] de Caractere
    nome: vetor[1..3] de Caractere
-   nota: vetor[1..5] de Real
+   nota: vetor[1..3] de Real
    a: Inteiro
    s, m: Real
 Procedimento CadastroGabarito()
