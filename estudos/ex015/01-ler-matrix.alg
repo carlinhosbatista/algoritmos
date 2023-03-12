@@ -10,5 +10,10 @@ inicio
       FimPara
    FimPara
    
+   Para l <- l 1 ate 3 faca
+      Para c <- 1 ate 3 faca
+         Escreva (m[l,c])
+      FimPara
+   FimPara
    
 fimalgoritmo
