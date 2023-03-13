@@ -13,5 +13,11 @@ inicio
        FimPara
     FimPara
     
+    Para l <- 1 ate 4 faca
+       Para c <- 1 ate 4 faca
+          Escreva(m[l,c])
+       FimPara
+       EscrevaL()
+    FimPara
     EscrevaL("A soma dos valores da diagonal principal e", sDP)
 fimalgoritmo
