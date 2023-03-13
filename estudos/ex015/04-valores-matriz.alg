@@ -1,7 +1,7 @@
 algoritmo "valoresMatriz"
 var
    m: vetor[1..4, 1..4] de Inteiro
-   l, c, sDP, p2L: Inteiro
+   l, c, sDP, p2L, mai3C: Inteiro
 inicio
     sDP <- 0
     p2L <- 1
@@ -25,6 +25,14 @@ inicio
     Para c <- 1 ate 4 faca
        p2L <- p2L * m[2,c]
     FimPara
+    
+    Para l <- 1 ate 4 faca
+       Se (m[l,3 > mai3C) entao
+          mai3C <- m[l,3]
+       FimSe
+    FimPara
+    
     EscrevaL("A soma dos valores da diagonal principal e", sDP)
     EscrevaL("O produto da Segunda Linha e", p2L)
+    EscrevaL("O maior da Terceira Coluna e", mai3C)
 fimalgoritmo
