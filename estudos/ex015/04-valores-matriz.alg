@@ -27,7 +27,7 @@ inicio
     FimPara
     
     Para l <- 1 ate 4 faca
-       Se (m[l,3 > mai3C) entao
+       Se (m[l,3] > mai3C) entao
           mai3C <- m[l,3]
        FimSe
     FimPara
