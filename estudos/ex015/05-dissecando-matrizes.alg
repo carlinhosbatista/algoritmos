@@ -55,7 +55,7 @@ FimProcedimento
 inicio
     Para l de 1 ate 4 faca
        Para c <- 1 ate 4 faca
-          Escreva("Digite o valor para a posicao [", l, ",", c, "]:")
+          Escreva("Digite o valor para a posicao [", l, ",", c, "]: ")
           Leia(m[l,c])
        FimPara
     FimPara
