@@ -62,15 +62,16 @@ inicio
        terminou <- Verdadeiro
     FimSe
     
-    Se (v[1,3] = v[2,2]) e (v[2,2] = v[3,1])
+    Se (v[1,3] = v[2,2]) e (v[2,2] = v[3,1]) entao
        terminou <- Verdadeiro
     FimSe
     
     velha <- 0
     Para i <- 1 ate 3 faca
        Para j <- 1 ate 3 faca
-          Se (v[i,j] <> "X") e (v[i,j] <> "O")
+          Se (v[i,j] <> "X") e (v[i,j] <> "O") entao
              velha <- velha + 1
+          FimSe
        FimPara
     FimPara
     Se (velha = 0) entao
@@ -91,15 +92,16 @@ inicio
     MostraVelha()
     Repita
         Repita
-           Escreva("Vai jogar", simb::1, "em qual posicao?")
+           EscrevaL("Vai jogar", simb:1, "em qual posicao?")
            Leia(p)
-           Jogar(simb, p)
+           r <- Jogar(simb, p)
            Se (r = falso) entao
               EscrevaL("JOGADA INVALIDA!!!")
-           Ate(r = verdadeiro)
            FimSe
-           mudaJogador()
-           LimpaTela
-           MostraVelha()
+        Ate(r = verdadeiro)
+        mudaJogador()
+        LimpaTela
+        MostraVelha()
     Ate(TerminouVelha() = verdadeiro)
+    EscrevaL("JOGO FINALIZADO!!!")
 fimalgoritmo
